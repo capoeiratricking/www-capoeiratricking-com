@@ -124,8 +124,8 @@
 }
 
 .download-icon {
-  animation:3 roll 5s infinite;
-  -webkit-animation:3 roll 5s infinite;
+    animation: roll 5s ease-out 2s infinite;
+    -webkit-animation: roll 5s ease-out 2s infinite;
 }
 
 @keyframes roll {
