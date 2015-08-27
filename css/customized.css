@@ -1,4 +1,99 @@
+.header-logo {
+	width:100px;
+	height:100px;
+	margin-bottom:10px;
+	border:5px solid rgb(255, 153, 0);
+	border-radius:50%;
+	box-shadow:0 10px 30px #000;
+	background: #fff;
+	transition: background .25s ease-in-out;
+	   -moz-transition: background .25s ease-in-out;
+	   -webkit-transition: background .25s ease-in-out;
+}
+
+.header-logo:hover {
+	background: rgb(255, 153, 0);
+	border:5px solid rgb(255, 255, 255);
+}
+
+@media min-width 960px{
+	body {
+		font-size:1.1em;
+	}
+
+	.header-avatar {
+		width:4.8em;
+		height:4.8em;
+	}
+}
+
+.social-email {
+    animation: slide-left-2x 5s ease 2s forwards;
+}
+
+.social-facebook {
+    animation: slide-left 5s ease 2s forwards;
+}
+
+.social-youtube {
+    animation: slide-right 5s ease 2s forwards;
+}
+
+.social-twitter {
+    animation: slide-right-2x 5s ease 2s forwards;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(-30%, 0px);
+  }
+}
+
+@keyframes slide-left-2x {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(-60%, 0px);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(30%, 0px);
+  }
+}
+
+@keyframes slide-right-2x {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(60%, 0px);
+  }
+}
+
 .white-icons a {
     color: rgba(255,255,255,.9);
 }
 
+.download-icon {
+  animation: roll 5s infinite;
+  transform: rotate(30deg);
+  opacity: 1;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

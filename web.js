@@ -4,19 +4,16 @@ var fs = require('fs');
 var app = express();
 
 app.use("/css", express.static(__dirname + '/css'));
-app.use("/en", express.static(__dirname + '/en'));
 app.use("/font-awesome", express.static(__dirname + '/font-awesome'));
 app.use("/fonts", express.static(__dirname + '/fonts'));
 app.use("/img", express.static(__dirname + '/img'));
 app.use("/js", express.static(__dirname + '/js'));
-app.use("/ko", express.static(__dirname + '/ko'));
 app.use("/less", express.static(__dirname + '/less'));
+app.use("/sounds", express.static(__dirname + '/sounds'));
 
 app.get('/', function(request, response) { var htmlBuffer = fs.readFileSync('index.html', 'utf-8'); response.send(htmlBuffer); });
-app.get('/ko', function(request, response) { var htmlBuffer = fs.readFileSync('index.html', 'utf-8'); response.send(htmlBuffer); });
-app.get('/en', function(request, response) { var htmlBuffer = fs.readFileSync('index.html', 'utf-8'); response.send(htmlBuffer); });
-app.get('/en/classes', function(request, response) { var htmlBuffer = fs.readFileSync('index.html', 'utf-8'); response.send(htmlBuffer); });
-app.get('/ko/classes', function(request, response) { var htmlBuffer = fs.readFileSync('index.html', 'utf-8'); response.send(htmlBuffer); });
+app.get('/favicon.ico', function(request, response) { var htmlBuffer = fs.readFileSync('favicon.ico', 'utf-8'); response.send(htmlBuffer); });
+app.get('/capoeiratricking-poster.pdf', function(request, response) { var htmlBuffer = fs.readFileSync('capoeiratricking-poster.pdf', 'utf-8'); response.send(htmlBuffer); });
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
