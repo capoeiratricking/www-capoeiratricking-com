@@ -124,24 +124,24 @@
 }
 
 .download-icon {
-    animation: roll 5s ease-out 2s infinite;
-    -webkit-animation: roll 5s ease-out 2s infinite;
+    animation: bounce-icon 2s ease 2s alternate infinite;
+    -webkit-animation: bounce-icon 2s ease 2s alternate infinite;
 }
 
-@keyframes roll {
+@keyframes bounce-icon {
   0% {
-    transform: rotate(0);
+    transform: translateY(0);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translateY(5px);
   }
 }
 
-@-webkit-keyframes roll {
+@-webkit-keyframes bounce-icon {
   0% {
-    -webkit-transform: rotate(0);
+    -webkit-transform: translateY(0);
   }
   100% {
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: translateY(5px);
   }
 }
