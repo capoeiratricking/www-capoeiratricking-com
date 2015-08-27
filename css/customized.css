@@ -125,11 +125,7 @@
 
 .download-icon {
   animation:3 roll 5s infinite;
-  transform: rotate(30deg);
-  opacity: 1;
   -webkit-animation:3 roll 5s infinite;
-  -webkit-transform: rotate(30deg);
-  -webkit-opacity: 1;
 }
 
 @keyframes roll {
