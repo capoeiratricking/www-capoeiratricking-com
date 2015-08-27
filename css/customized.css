@@ -29,18 +29,22 @@
 
 .social-email {
     animation: slide-left-2x 5s ease 2s forwards;
+    -webkit-animation: slide-left-2x 5s ease 2s forwards;
 }
 
 .social-facebook {
     animation: slide-left 5s ease 2s forwards;
+    -webkit-animation: slide-left 5s ease 2s forwards;
 }
 
 .social-youtube {
     animation: slide-right 5s ease 2s forwards;
+    -webkit-animation: slide-right 5s ease 2s forwards;
 }
 
 .social-twitter {
     animation: slide-right-2x 5s ease 2s forwards;
+    -webkit-animation: slide-right-2x 5s ease 2s forwards;
 }
 
 @keyframes slide-left {
