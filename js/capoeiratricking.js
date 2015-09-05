@@ -5,14 +5,13 @@ $(document).ready(function(){
 
 $("header").vegas({
       timer: false,
-      delay: 7000,
+      delay: 17000,
       preload: true,
-      overlay: '/img/overlays/06.png',
+      overlay: '/img/overlays/07.png',
       slides: [
-        { src: "/img/yuppiecapoeira-header.jpg" }
+        { src: "/img/hansabu-freeze-2600x2250px.png", valign: "30%", transition: "swirlRight" },
       ],
-      animation: 'kenburns',
+      animation: 'kenburnsUpLeft',
       transitionDuration: 9000,
 });
-
 
