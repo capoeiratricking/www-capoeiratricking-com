@@ -9,7 +9,7 @@ $("header").vegas({
       preload: true,
       overlay: '/img/overlays/07.png',
       slides: [
-        { src: "/img/hansabu-freeze-2600x2250px.png", valign: "30%", transition: "swirlRight" },
+        { src: "/img/hansabu-freeze-2600x2250px.jpg", valign: "30%", transition: "swirlRight" },
       ],
       animation: 'kenburnsUpLeft',
       transitionDuration: 9000,
